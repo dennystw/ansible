@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ubuntu:
+    container_name: ubuntu
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    ports:
+      - "2222:22"
+    restart: on-failure

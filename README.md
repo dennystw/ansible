@@ -22,13 +22,11 @@ inventories/
          stagehost1.yml   # here we assign variables to particular systems
          stagehost2.yml
 
-library/
-module_utils/
-filter_plugins/
+library/                  # if any custom modules, put them here (optional)
+module_utils/             # if any custom module_utils to support modules, put them here (optional)
+filter_plugins/           # if any custom filter plugins, put them here (optional)
 
-site.yml
-webservers.yml
-dbservers.yml
+sample.yml                # master playbook
 
 roles/
     common/
